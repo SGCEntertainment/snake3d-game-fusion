@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 467109669415118680}
   - component: {fileID: -3898673049280578171}
   - component: {fileID: 6852641052826794442}
+  - component: {fileID: 568470030914186202}
   m_Layer: 6
   m_Name: NetworkSnake
   m_TagString: Untagged
@@ -61,6 +62,7 @@ MonoBehaviour:
   - {fileID: 467109669415118681}
   - {fileID: 467109669415118680}
   - {fileID: -3898673049280578171}
+  - {fileID: 568470030914186202}
   SimulationBehaviours: []
 --- !u!114 &467109669415118681
 MonoBehaviour:
@@ -124,6 +126,32 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 120
   m_CollisionDetection: 3
+--- !u!114 &568470030914186202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 467109669415118687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 158639473, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolationDataSource: 0
+  InterpolationSpace: 0
+  InterpolationTarget: {fileID: 5226983488690145163}
+  InterpolateErrorCorrection: 1
+  InterpolatedErrorCorrectionSettings:
+    MinRate: 3.3
+    MaxRate: 10
+    PosBlendStart: 0.25
+    PosBlendEnd: 1
+    PosMinCorrection: 0.025
+    PosTeleportDistance: 2
+    RotBlendStart: 0.1
+    RotBlendEnd: 0.5
+    RotTeleportRadians: 1.5
 --- !u!1 &1718984607845632284
 GameObject:
   m_ObjectHideFlags: 0
